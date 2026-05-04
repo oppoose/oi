@@ -1,0 +1,44 @@
+{
+  "grunt.autoDetect": "on",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": { "source": "PowerShell", "icon": "terminal-powershell" },
+    "Command Prompt": {
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "args": ["/K", "chcp 65001"],  // 保留中文编码支持
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": { "source": "Git Bash" }
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "code-runner.runInTerminal": true,
+  "code-runner.showExecutionMessage": false,
+  "workbench.editor.enablePreview": true,
+
+  // ==== 核心修复部分 ====
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggest.showKeywords": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "C_Cpp.intelliSenseEngine": "default", // 小写
+  "C_Cpp.errorSquiggles": "enabled",
+  "extensions.autoUpdate": false,
+  "ipynb.experimental.serialization": false,
+  "files.associations": {
+    "if else.C": "cpp",
+    "加减.C": "cpp",
+    "additon.C": "cpp",
+    "2hr328fcg24nv08csnqmiaogfb%2874.C": "cpp",
+    "stdio.h": "c",
+    "iostream": "cpp",
+    "vector": "cpp",
+    "string": "cpp",
+    "fstream": "cpp",
+    "cmath": "cpp",
+    "stdio_s.h": "c",
+    "WOCAO.C": "cpp"
+  },
+  //"C_Cpp.errorSquiggles": "disabled" // 禁止扩展偷偷更新作妖
+}
