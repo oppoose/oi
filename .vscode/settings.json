@@ -23,7 +23,7 @@
   "editor.suggest.showKeywords": true,
   "editor.acceptSuggestionOnEnter": "off",
   "C_Cpp.intelliSenseEngine": "default", // 小写
-  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.errorSquiggles": "disabled",
   "extensions.autoUpdate": false,
   "ipynb.experimental.serialization": false,
   "files.associations": {
